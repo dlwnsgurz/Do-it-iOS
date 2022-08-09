@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "78A19EC6-F8B6-4F16-AE77-FA183C6E01A8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AEEDD5C3-E20A-4394-A5D3-78DFF292DF0E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alert/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "AEEDD5C3-E20A-4394-A5D3-78DFF292DF0E - e34b3a4a10f234b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Alert.ViewController"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "AEEDD5C3-E20A-4394-A5D3-78DFF292DF0E - 1bc37951e0e98f56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Alert.ViewController"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "AEEDD5C3-E20A-4394-A5D3-78DFF292DF0E - 9ceee854c2fc284e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Alert.ViewController&gt;"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "AEEDD5C3-E20A-4394-A5D3-78DFF292DF0E - 14d6ba545185ed2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Alert.ViewController&gt;"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "AEEDD5C3-E20A-4394-A5D3-78DFF292DF0E - 99d5d566bd12e503"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.__deallocating_deinit"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "658C676C-C845-4A4D-B661-A11DCD1E66F8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Alert/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "658C676C-C845-4A4D-B661-A11DCD1E66F8 - 4f351e654b35f950"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.isLampOn.getter : Swift.Bool"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "658C676C-C845-4A4D-B661-A11DCD1E66F8 - 44b13ca542f8c15c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.isLampOn.setter : Swift.Bool"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "658C676C-C845-4A4D-B661-A11DCD1E66F8 - 2fcd681d7fcfdf6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.isLampOn.modify : Swift.Bool"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "658C676C-C845-4A4D-B661-A11DCD1E66F8 - 53b8591e1f4ced5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.isLampOn.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "658C676C-C845-4A4D-B661-A11DCD1E66F8 - 1bc37951e0e98f56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Alert.ViewController"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "658C676C-C845-4A4D-B661-A11DCD1E66F8 - 14d6ba545185ed2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Alert.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Alert.ViewController&gt;"
+                  moduleName = "Alert"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lee/Documents/Programming/IOS/DoItiOS/Alert/Alert/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
