@@ -80,11 +80,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             locationLabel1.text = "보고 계신 위치"
             locationLabel2.text = "한국폴리텍 대학 강릉캠퍼스"
 
-        }else{
+        }else if sender.selectedSegmentIndex == 2{
             setAnnotation(latitudeValue: 37.556876, longtitudeValue: 126.914046, delta: 0.01, title: "이지퍼블리싱", subtitle: "서울시 마포구 잔다리로 109 이지스 빌딩")
             locationLabel1.text = "보고 계신 위치"
             locationLabel2.text = "이지스 퍼블리싱 출판사"
+        }else{
+            setAnnotation(latitudeValue: 37.5, longtitudeValue: 37.5, delta: 0.01, title: "관악롯데타워", subtitle: "서울시 동작구 신대방동 롯데타워")
+            locationLabel1.text = "보고 계신 위치"
+            locationLabel2.text = "내 집"
         }
+    
     }
     
 }

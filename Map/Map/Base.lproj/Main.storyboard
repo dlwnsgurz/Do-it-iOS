@@ -23,6 +23,7 @@
                                     <segment title="현재 위치"/>
                                     <segment title="폴리텍 대학"/>
                                     <segment title="이지 퍼블리싱"/>
+                                    <segment title="우리 집"/>
                                 </segments>
                                 <connections>
                                     <action selector="changeSeg:" destination="BYZ-38-t0r" eventType="valueChanged" id="2Ku-LM-5sA"/>
