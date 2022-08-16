@@ -22,13 +22,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         // Do any additional setup after loading the view.
         locationLabel1.text = ""
         locationLabel2.text = ""
-        locationsManager.delegate = self
-        locationsManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationsManager.requestWhenInUseAuthorization()
-        locationsManager.startUpdatingLocation()
-        mapView.showsUserLocation = true
+        locationsManager.delegate = self // delegate 프로토콜을 채택
+        locationsManager.desiredAccuracy = kCLLocationAccuracyBest // 정보 정확도 최고로.
+        locationsManager.requestWhenInUseAuthorization() // 사용자에게 위치 정보를 넘겨줄 것인지 묻는다.
+        locationsManager.startUpdatingLocation() // 사용자의 정보를 받아온다.
+        mapView.showsUserLocation = true // 유저의 위치를 파란색으로 표시한다.
     }
 
+    // 인자로 넘겨준 위도와 경도 줌 비율에 따라 지도에 표시한다.
     func goLocation(latitudeValue: CLLocationDegrees, longtitudeValue: CLLocationDegrees, delta span : Double) -> CLLocationCoordinate2D{
         let pLocation = CLLocationCoordinate2DMake(latitudeValue, longtitudeValue)
         let spanValue = MKCoordinateSpan(latitudeDelta: span, longitudeDelta: span)
@@ -36,11 +37,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         mapView.setRegion(pRegion, animated: true)
         return pLocation
     }
-    
+    // delegate에 선언되어 있는 것으로써, 위치 정보가 업데이트 된 뒤 호출된다.
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let pLocation = locations.last
         _ = goLocation(latitudeValue: (pLocation?.coordinate.latitude)!, longtitudeValue: (pLocation?.coordinate.longitude)!, delta: 0.01)
-        CLGeocoder().reverseGeocodeLocation(pLocation!, completionHandler: {
+        CLGeocoder().reverseGeocodeLocation(pLocation!, completionHandler: { // 현재 위치의 정보를 받아온다.
             (placemarks, error) -> Void in
             let pm = placemarks!.first
             let country = pm!.country
@@ -59,14 +60,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             }
             
         )
-        locationsManager.stopUpdatingLocation()
+        locationsManager.stopUpdatingLocation() // 위치 정보 업데이트를 끝내는 함수로써 호출해야 이 큰 함수를 탈출할 수 있다.
     }
     func setAnnotation(latitudeValue: CLLocationDegrees, longtitudeValue: CLLocationDegrees, delta span: Double, title strTitle: String, subtitle strSubtitle: String){
         let annotation = MKPointAnnotation()
         annotation.coordinate = goLocation(latitudeValue: latitudeValue, longtitudeValue: longtitudeValue, delta: span)
+        // 위도와 경도로 전달된 위치에 표시한다.
         annotation.title = strTitle
         annotation.subtitle = strSubtitle
         mapView.addAnnotation(annotation)
+        
         
     }
     @IBAction func changeSeg(_ sender: UISegmentedControl) {
