@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DatePickerViewController: UIViewController {
 
-    let timeSelector : Selector = #selector(ViewController.updateTime)
+    let timeSelector : Selector = #selector(DatePickerViewController.updateTime)
     let interval = 1.0
     var count = 0
     var alarmTime: String = ""
