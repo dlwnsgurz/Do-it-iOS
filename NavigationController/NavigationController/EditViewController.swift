@@ -20,6 +20,7 @@ class EditViewController: UIViewController{
     var delegate : EditDelegate?
     var isLampOn = false
     var isZoom = false
+    var size = CGSize()
     
     @IBOutlet var lampSwitch: UISwitch!
     @IBOutlet var lampImageView: UIImageView!
@@ -36,16 +37,13 @@ class EditViewController: UIViewController{
         }else{
             lampImageView.image = UIImage(named: "lamp_off")
         }
-        let scale : CGFloat = 2.0
-        let imageWidth: CGFloat = lampImageView.frame.width
-        let imageHeight: CGFloat = lampImageView.frame.height
         if isZoom{
-            lampImageView?.frame.size = CGSize(width: imageWidth * scale, height: imageHeight * scale)
-            resizeButton.setTitle("축소", for: .normal)
-        }else{
-            lampImageView?.frame.size = CGSize(width: imageWidth / scale, height: imageHeight / scale)
             resizeButton.setTitle("확대", for: .normal)
+        }else{
+            resizeButton.setTitle("축소", for: .normal)
         }
+        lampImageView.frame.size = size
+        
         // Do any additional setup after loading the view.
     }
     
@@ -68,6 +66,7 @@ class EditViewController: UIViewController{
         if delegate != nil{
             delegate?.didMessageEditDone(self, message: textField.text!)
             delegate?.didLampSetDone(isLampOn: lampSwitch.isOn)
+            delegate?.didLampZoomDone(isZoom: isZoom)
         }
     }
     

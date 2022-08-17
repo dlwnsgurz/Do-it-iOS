@@ -33,7 +33,9 @@ class ViewController: UIViewController, EditDelegate{
         editViewController.isLampOn = self.isLampOn
         editViewController.isZoom = isZoom
         editViewController.delegate = self
-        
+        let imageWidth: CGFloat = lampImageView.frame.width
+        let imageHeight: CGFloat = lampImageView.frame.height
+        editViewController.size = CGSize(width: imageWidth, height: imageHeight)
     }
     
     func didMessageEditDone(_ controller: EditViewController, message: String) {
@@ -53,11 +55,11 @@ class ViewController: UIViewController, EditDelegate{
         let imageHeight: CGFloat = lampImageView.frame.height
         
         if isZoom{
-            lampImageView?.frame.size = CGSize(width: imageWidth * scale, height: imageHeight * scale)
-            
-            
+            lampImageView?.frame.size = CGSize(width: imageWidth, height: imageHeight)
+            self.isZoom = true
         }else{
             lampImageView?.frame.size = CGSize(width: imageWidth / scale, height: imageHeight / scale)
+            self.isZoom = false
         }
     }
 }
