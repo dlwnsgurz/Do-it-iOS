@@ -41,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hfk-jS-dH1">
-                                <rect key="frame" x="47" y="329" width="240" height="348"/>
+                                <rect key="frame" x="47" y="329" width="145" height="277"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -122,7 +122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hh6-OM-FFj">
-                                <rect key="frame" x="50" y="327" width="240" height="345"/>
+                                <rect key="frame" x="50" y="327" width="156" height="283"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YK0-tj-TeX">
@@ -132,6 +132,15 @@
                                     <action selector="switchLamp:" destination="O4W-1g-5bc" eventType="valueChanged" id="dfr-Ye-VsL"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xm8-7W-DF2">
+                                <rect key="frame" x="213" y="744" width="48" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="touchUpZoomButton:" destination="O4W-1g-5bc" eventType="touchUpInside" id="Sd8-JN-Sv3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uSW-AC-5yZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -140,6 +149,7 @@
                     <connections>
                         <outlet property="lampImageView" destination="hh6-OM-FFj" id="b9H-2y-huD"/>
                         <outlet property="lampSwitch" destination="YK0-tj-TeX" id="KXN-yh-q53"/>
+                        <outlet property="resizeButton" destination="xm8-7W-DF2" id="McE-l7-1Sh"/>
                         <outlet property="textField" destination="2Mj-Jq-apV" id="Cdk-Q8-nJd"/>
                         <outlet property="textLabel" destination="x7i-8m-bOc" id="0Ps-m9-8We"/>
                     </connections>

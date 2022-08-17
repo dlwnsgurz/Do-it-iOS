@@ -15,6 +15,7 @@ class ViewController: UIViewController, EditDelegate{
     let lampOnImage = UIImage(named: "lamp_on")
     let lampOffImage = UIImage(named: "lamp_off")
     var isLampOn = true
+    var isZoom = false
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,6 +31,7 @@ class ViewController: UIViewController, EditDelegate{
         }
         editViewController.textOfField = textField.text!
         editViewController.isLampOn = self.isLampOn
+        editViewController.isZoom = isZoom
         editViewController.delegate = self
         
     }
@@ -43,6 +45,19 @@ class ViewController: UIViewController, EditDelegate{
             lampImageView.image = lampOnImage
         }else{
             lampImageView.image = lampOffImage
+        }
+    }
+    func didLampZoomDone(isZoom: Bool) {
+        let scale : CGFloat = 2.0
+        let imageWidth: CGFloat = lampImageView.frame.width
+        let imageHeight: CGFloat = lampImageView.frame.height
+        
+        if isZoom{
+            lampImageView?.frame.size = CGSize(width: imageWidth * scale, height: imageHeight * scale)
+            
+            
+        }else{
+            lampImageView?.frame.size = CGSize(width: imageWidth / scale, height: imageHeight / scale)
         }
     }
 }
