@@ -7,17 +7,20 @@
 
 import UIKit
 
-class AddViewController: UIViewController {
-
+class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
+    let pickerViewImage = ["cart.png", "clock.png", "pencil.png"]
+    var pickerViewSelectedImage :String = ""
+    @IBOutlet var pickerView: UIPickerView!
     @IBOutlet var textFieldAddItem: UITextField!
+    @IBOutlet var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        pickerView.delegate = self
+        imageView.image = UIImage(named: pickerViewImage[0])
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -30,9 +33,30 @@ class AddViewController: UIViewController {
 
     @IBAction func touchUpAddButton(_ sender: UIButton) {
         items.append(textFieldAddItem.text!)
-        itemsImage.append("clock.png")
+        itemsImage.append(pickerViewSelectedImage)
         textFieldAddItem.text = ""
         navigationController?.popViewController(animated: true)
     }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerViewImage.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        
+        let uiImageView = UIImageView(image: UIImage(named: pickerViewImage[row]))
+        uiImageView.frame = CGRect(x: 0, y: 0, width: 50, height: 25)
+        return uiImageView
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let selectedImage = UIImage(named: pickerViewImage[row])
+        pickerViewSelectedImage = pickerViewImage[row]
+        imageView.image = selectedImage
+    }
+    
+    
     
 }
