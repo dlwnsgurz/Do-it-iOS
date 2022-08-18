@@ -43,7 +43,6 @@ class EditViewController: UIViewController{
             resizeButton.setTitle("축소", for: .normal)
         }
         lampImageView.frame.size = size
-        
         // Do any additional setup after loading the view.
     }
     
